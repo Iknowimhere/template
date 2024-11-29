@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: aliceblue;
+    font-family: "Poppins",sans-serif;
+}
+header .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin-top: 1em;
+    color: orangered;
+    font-size: large;
+}
+header .social-links{
+    display: flex;
+    gap: 1em;
+    font-size: large;
+}
+header nav{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+header nav .logo{
+    color: blue;
+    font-size: xx-large;
+    margin-left: 1em;
+}
+.logo span{
+    font-size: large;
+    font-weight: 600;
+}
+header nav .nav-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.nav-links a:last-child{
+    padding: 1em 2em;
+    background-color: blue;
+    color: white;
+    border-radius: 2em;
+}
+.hero{
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/hero.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: xx-large;
+    margin-top: 1em;
+}
+.contact-section{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .contact-title{
+    color: blue;
+    font-size: xx-large;
+    margin-bottom: 1em;
+}
+.contact-section .contact-main{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    /* gap: 5em; */
+}
+.contact-main .image{
+    flex: 1;
+    padding: 2em;
+    position: relative;
+}
+.image h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: xx-large;
+}
+.contact-main .image img{
+    display: block;
+    width: 100%;
+    border-radius: 0.25em;
+    filter: blur(1px);
+}
+.contact-main .form{
+    flex: 1;
+    padding: 2em;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+form input{
+    padding: 1.5em;
+    outline: none;
+    border-radius: 0.25em;
+    border: 2px solid #ddd; 
+}
+form input::placeholder{
+    font-size: large;
+}
+form button{
+    padding: 1.5em;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 0.25em;
+    margin-top: 1em;
+}
+footer{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: white;
+    background-color: blue;
+}
+footer .address{
+    font-style: italic;
+    font-size: large;
+}
